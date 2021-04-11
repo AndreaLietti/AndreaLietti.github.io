@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>bilancia</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: rgb(185, 252, 141);
+        }
+    </style>
+    <script type="text/javascript">
+        function bilancia(textBox1, textBox2) {
+            if (textBox1 != "" && textBox2 != "") {
+                if (textBox2 == "Acciaio" || textBox2 == "acciaio" || textBox2 == "Ottone" || textBox2 == "ottone" || textBox2 == "Alluminio" || textBox2 == "alluminio" || textBox2 == "Rame" || textBox2 == "rame") {
+                    var counter = 0, acciaio = 8000, ottone = 8700, alluminio = 7100, rame = 8900;
+                    for (var i = 0; i < textBox1.length; i++)  if (parseInt(textBox1.charAt(i)) < 0 && parseInt(textBox1.charAt(i)) > 9) counter++;
+                    if (counter == 0) if (textBox2 == "Acciaio" || textBox2 == "acciaio") document.getElementById("ris").innerHTML = parseInt(textBox1) * acciaio;
+                    else if (textBox2 == "Ottone" || textBox2 == "ottone") document.getElementById("ris").innerHTML = parseInt(textBox1) * ottone;
+                    else if (textBox2 == "Alluminio" || textBox2 == "alluminio") document.getElementById("ris").innerHTML = parseInt(textBox1) * alluminio;
+                    else if (textBox2 == "Rame" || textBox2 == "rame") document.getElementById("ris").innerHTML = parseInt(textBox1) * rame;
+                } else document.getElementById("ris").innerHTML = "Metallo non valido";
+            } else document.getElementById("ris").innerHTML = "Compila tutti i campi";
+        }
+    </script>
+</head>
+
+<body>
+    Volume: <input type="text" value="" id="contenuto1"><br><br>
+    Materiale: <input type="text" value="" id="contenuto2"><input type="button" value="Calcola!" name="btn"
+        onclick="bilancia(document.getElementById('contenuto1').value,document.getElementById('contenuto2').value);"
+        style="margin-left: 30px;"><br><br>
+    Peso: <output id="ris"></output>
+</body>
+
+</html>
