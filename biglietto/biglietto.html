@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>biglietto-treno</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="calcoli.js">
+
+    </script>
+    <style type="text/css">
+        body {
+            background-color: aquamarine;
+        }
+
+        .dati {
+            width: 160px;
+            height: 20px;
+            text-align: right;
+        }
+
+        .risultati {
+            color: blueviolet;
+            font-size: 110%;
+        }
+
+        .bottone {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+            chilometri: <input type="text" id="chilometri" class="dati">
+            <br>
+            Classe:
+            <br>
+            <input type="radio" id=class1 name="a" value="1">1<br>
+            <input type="radio" id=class2 name="a" value="2">2<br>
+
+            numero delle persone:
+            <select id="numero-persone">
+
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+
+            </select>
+
+        </p>
+        <p>
+            <input type="button" value="calcola prezzo" class="bottone" onclick="calcola(this.form)">
+            <p id="prezzo" class="risultati"></p>
+        </p>
+    </form>
+</body>
+
+</html>
