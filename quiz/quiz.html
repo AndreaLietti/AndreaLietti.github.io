@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+    <title>QUIZ</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="script.js">
+
+    </script>
+    <style type="text/css">
+        .dati {
+            width: 160px;
+            height: 20px;
+            text-align: right;
+        }
+
+        .domande {
+            width: 150px;
+            height: 20px;
+            text-align: right;
+            color: rgb(105, 194, 197);
+        }
+
+        .risultati {
+            color: blue;
+            font-size: 110%;
+        }
+
+        .bottone {
+            width: 100px;
+            height: 40px;
+        }
+
+        .field {
+            width: 700px;
+        }
+
+        .field1 {
+            float: left;
+            width: 230px;
+            height: 47px;
+        }
+
+        .Pu {
+            border-radius: 10px 10px 10px 10px;
+            width: 100px;
+            height: 47px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+            &nbsp&nbsp&nbspDati Anagrafici
+            <br>
+            Cognome: <input type="text" id="cognome" class="dati">
+            Nome: <input type="text" id="nome" class="dati">
+            <br>
+            Data Di Nascita
+            <br>
+            Giorno <input type="text" id="giorno" class="dati">
+            Mese
+            <select id="mese">
+                <option>Gennaio</option>
+                <option>Febbraio</option>
+                <option>Marzo</option>
+                <option>Aprile</option>
+                <option>Maggio</option>
+                <option>Giugno</option>
+                <option>Luglio</option>
+                <option>Agosto</option>
+                <option>Settembre</option>
+                <option>Ottobre</option>
+                <option>Novembre</option>
+                <option>Dicembre</option>
+            </select>
+            Anno <input type="text" id="Anno" class="dati">
+            <br><br>
+        <fieldset class="field">
+            <legend>Domande</legend>
+            <br>
+            Qual'è il linguaggio di programmazione utilizzato per creare e modificare i database? (in maiuscolo)
+            <br>
+            <input type="text" id="ris1" class="domande">
+            <br>
+            quanti valori può assumere una variabile booleana?
+            <br>
+            <select id="mese">
+                <option>1</option>
+                <option>2</option>
+                <option>4</option>
+                <option>256</option>
+            </select>
+            <br>
+            Quali sono le librerie caricate a run-time?
+            <br>
+            Statiche<input type="radio" id="ris3A" name="gruppo1">
+            <br>
+            Dinamiche<input type="radio" id="ris3B" name="gruppo1">
+            <br>
+            <br>
+            Quali tra queste sono parole chiave in C++?
+            <br>
+            void<input type="checkbox" id="ris4A">
+            <br>
+            integer<input type="checkbox" id="ris4B">
+            <br>
+            char<input type="checkbox" id="ris4C">
+            <br>
+            <br>
+            8 bit corrispondono a un...
+            <br>
+            <input type="text" id="ris5" class="dati">
+            </p>
+        </fieldset>
+        <p>
+            <input type="button" value="Elabora" class="bottoneE" onclick="elabora()">
+            <input type="button" value="Cancella" class="bottoneC" onclick="cancella()">
+        <fieldset class="field1">
+            <legend>Esito</legend>
+            Punteggio:<input type="text" id="punteggio">
+        </fieldset>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="button" value="Utente con punteggio" class="bottoneP" onclick="UP()">
+        <input type="text" id="punteggioUtente">
+        </p>
+        <p id="peso" class="risultati">
+        </p>
+    </form>
+</body>
+
+</html>

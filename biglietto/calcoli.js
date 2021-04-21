@@ -24,8 +24,7 @@ function calcola(form) {
                 break;
         }
     }
-    else if (form.class2.checked)
-    {
+    else if (form.class2.checked) {
         switch (scelta) {
             case 0:
                 prezzo = (0.21 * 1) * chilometri;
