@@ -1,14 +1,14 @@
-elabora()
+function elabora()
 {
 
 }
 
-cancella()
+function cancella()
 {
     
 }
 
-PU()
+function PU()
 {
     
 }
