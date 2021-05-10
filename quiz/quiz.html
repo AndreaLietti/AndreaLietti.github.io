@@ -102,11 +102,11 @@
             <br>
             Quali tra queste sono parole chiave in C++?
             <br>
-            void<input type="checkbox" id="ris4A">
+            void<input type="checkbox" id="ris4A" name="a">
             <br>
-            integer<input type="checkbox" id="ris4B">
+            integer<input type="checkbox" id="ris4B" name="a">
             <br>
-            char<input type="checkbox" id="ris4C">
+            char<input type="checkbox" id="ris4C" name="a">
             <br>
             <br>
             8 bit corrispondono a un...
@@ -116,16 +116,14 @@
         </fieldset>
         <p>
             <input type="button" value="Elabora" class="bottoneE" onclick="elabora()">
-            <input type="button" value="Cancella" class="bottoneC" onclick="cancella()">
+            <input type="reset" value="Cancella" class="bottoneC" onclick="cancella()">
         <fieldset class="field1">
             <legend>Esito</legend>
             Punteggio:<input type="text" id="punteggio">
         </fieldset>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <input type="button" value="Utente con punteggio" class="bottoneP" onclick="UP()">
-        <input type="text" id="punteggioUtente">
-        </p>
-        <p id="peso" class="risultati">
+        <output type="text" id="punteggioUtente">
         </p>
     </form>
 </body>
